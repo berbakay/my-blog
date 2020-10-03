@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rick's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="/css/common.css" rel="stylesheet">
+</head>
+<body>
+    <div class='main'>
+        <header>
+            <a href="https://www.berbakay.com">
+                <div class="home-button">
+                    <i class="fas fa-home"></i>
+                </div>
+            </a>
+            <h1>Rick Kay</h1>
+            <h2>my blog</h2>
+            <hr>
+        </header>
+        <list>
+            {% for post in site.posts %}
+            <a href="{{ post.url }}">
+                <div class='listitem'>
+                    <li>{{post.title}}</li>
+                    <p>{{ post.date | date: '%d %B %Y'}}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </list>
+    </div> 
+    <div class="footer">
+        <ul class="nav-list">
+            <li>
+                <a href='https://twitter.com/berbakay' class='icon-link'>
+                        <i class="fab fa-twitter-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href='https://github.com/berbakay' class='icon-link'>
+                    <i class="fab fa-github-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href='https://www.linkedin.com/in/richardakay/' class='icon-link'>
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+
