@@ -1,0 +1,99 @@
+*{
+    font-family: sans-serif;
+}
+
+html {
+    background-color: hsl(24, 20%, 95%);    
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin:0
+}
+
+.main {
+    flex: 1;
+}
+
+header {
+    margin-left: 15rem;
+}
+
+header p {
+    margin-top: 3rem;
+    color: black;
+    border-top: -1px;
+}
+
+header .home-button {
+    color: black;
+    position: absolute;
+    top: 1rem;
+    right: 15rem;
+    font-size: 3rem;
+}
+
+.title {
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.title h1 {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+.title p {
+    color: black;
+}
+
+.content {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.main hr {
+    margin-top: -1rem;
+    color: black;
+}
+
+.footer {
+    margin-top: 1rem;
+    bottom: 0;
+    text-align: left;
+    background-color: #000000;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.nav-list{
+    margin-left: 14rem;
+    padding-left: 0
+}
+
+.nav-list li{
+    margin-left: 1rem;
+    display: inline;
+}
+
+.fab {
+    font-size: 2rem;
+    color: white;
+}
+
+.fa-twitter-square:hover{
+    color: #38a1f3
+}
+
+.fa-github-square:hover{
+    color:#d73a49
+}
+
+.fa-linkedin:hover{
+    color: #0e76a8
+}

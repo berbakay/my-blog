@@ -10,6 +10,10 @@ html {
     height: 100%
 }
 
+a {
+    color: black;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -17,9 +21,6 @@ body {
     margin-bottom: 0;
 }
 
-a {
-    color: black;
-}
 .main {
     flex: 1;
 }
