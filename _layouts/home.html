@@ -21,7 +21,7 @@
         </header>
         <list>
             {% for post in site.posts %}
-            <a href="{{ post.url }}">
+            <a href="{{post.url | prepend: site.baseurl}}">
                 <div class='listitem'>
                     <li>{{post.title}}</li>
                     <p>{{ post.date | date: '%d %B %Y'}}</p>
