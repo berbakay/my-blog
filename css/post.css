@@ -47,13 +47,14 @@ header .home-button {
     margin-top: 3rem;
 }
 
-.title p {
+.title p{
     color: black;
+    opacity: 0.3;
 }
 
 .content {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 
@@ -96,4 +97,53 @@ header .home-button {
 
 .fa-linkedin:hover{
     color: #0e76a8
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        margin-left: 5rem;
+    }
+
+    header .home-button {
+        right: 5rem;
+    }
+
+
+    .title {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .content {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .nav-list{
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        margin-left: 1rem;
+    }
+
+    header .home-button {
+        right: 1rem;
+    }
+
+    .title {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .nav-list{
+        margin-left: 1rem;
+    }
 }
