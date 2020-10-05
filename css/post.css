@@ -99,6 +99,8 @@ header .home-button {
     color: #0e76a8
 }
 
+img[alt=iphone-mini] { width: 80%; }
+
 @media screen and (max-width: 768px) {
     header {
         margin-left: 5rem;
